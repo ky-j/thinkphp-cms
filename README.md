@@ -1,5 +1,5 @@
 ### 课程工具
-ThinkPHP3.2.3完整版 + Layer
+ThinkPHP3.2.3完整版 + Layer + PhpStorm
 
 ### 技能
 1. 异步登录
@@ -34,3 +34,24 @@ ThinkPHP3.2.3完整版 + Layer
 ### dialog 封装
 
 目的：快速调用
+
+### 异步方式实现登录功能
+- 前端校验和获取数据
+- 服务端对数据进行强校验（封装show函数输出json）
+- 用户信息的数据库校验（单独建一个db.php，LOAD_EXT_CONFIG）
+- 登录成功记录session
+- 退出登录清除session
+
+### 菜单管理
+- 用JS将表单数据转换为json格式
+提交数据（为什么要序列化数据）
+- PHP处理数据交互（使用add方法进行数据写入）
+- 菜单列表（列表展示、分页、搜索）
+ - volist
+ - 判断状态获取文本，写在function.php中
+ - 模板中判断实用eq
+
+### 其他
+[jQuery API](http://jquery.cuishifeng.cn/)
+
+[TP3.2 手册](http://document.thinkphp.cn/manual_3_2.html)
