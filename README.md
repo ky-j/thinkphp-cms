@@ -1,8 +1,9 @@
 ### 课程工具
 ThinkPHP3.2.3完整版 + Layer + PhpStorm
 
-### 技能
-1. 异步登录
+### 技能点
+1. 封装Dialog
+2. exit('hell world'); 等同于 echo 'hello world'; exit;
 
 ### 课程简介知识点
 
@@ -44,14 +45,21 @@ ThinkPHP3.2.3完整版 + Layer + PhpStorm
 
 ### 菜单管理
 - 用JS将表单数据转换为json格式
-提交数据（为什么要序列化数据）
+提交数据（**为什么要序列化数据**）
 - PHP处理数据交互（使用add方法进行数据写入）
 - 菜单列表（列表展示、分页、搜索）
  - volist
  - 判断状态获取文本，写在function.php中
  - 模板中判断实用eq
+- 删除模块（不实际删除，只改变状态，**为什么要抛出异常**）
+- 排序模块（**序号为什么要用数组类型**）
+- 将配置的数据读取到后台菜单栏中
+
+### 文章管理
+- 图片异步上传（uploadify，TP自带上传类库）
 
 ### 其他
-[jQuery API](http://jquery.cuishifeng.cn/)
-
-[TP3.2 手册](http://document.thinkphp.cn/manual_3_2.html)
+- [jQuery API](http://jquery.cuishifeng.cn/)
+- [TP3.2 手册](http://document.thinkphp.cn/manual_3_2.html)
+- [Bootstrap后台模板SB Admin 2](https://startbootstrap.com/template-overviews/sb-admin-2/)
+- [后台管理UI的选择](http://www.suchso.com/UIweb/houtai-ui.html)
