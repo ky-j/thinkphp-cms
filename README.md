@@ -1,5 +1,5 @@
 ### 课程工具
-ThinkPHP3.2.3完整版 + Layer + PhpStorm
+ThinkPHP3.2.3完整版 + Layer + PhpStorm + kindeditor + uploadify
 
 ### 技能点
 1. 封装Dialog
@@ -57,6 +57,11 @@ ThinkPHP3.2.3完整版 + Layer + PhpStorm
 
 ### 文章管理
 - 图片异步上传（uploadify，TP自带上传类库）
+- kindeditor编辑器内部图片异步上传（[文档](http://kindeditor.net/docs/upload.html)）
+- 文章数据表分主表和副表
+- 标题颜色和来源可以写在配置文件中
+- 入库的数据都要进行过滤 htmlspecialchars 防 xss 攻击
+- 列表分页与搜索
 
 ### 其他
 - [jQuery API](http://jquery.cuishifeng.cn/)
