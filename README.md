@@ -1,9 +1,10 @@
 ### 课程工具
 ThinkPHP3.2.3完整版 + Layer + PhpStorm + kindeditor + uploadify
 
-### 技巧
+### 思路&技巧
 1. 封装对话框Dialog.js
 2. 对密码加密最好利用，MD5(密码+盐值)的形式
+3. 对于后台session判断，抽象出一个公共类
 
 ### PHP知识点
 - exit('hi'); 等同于 echo 'hi'; exit;
