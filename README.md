@@ -1,9 +1,34 @@
 ### 课程工具
 ThinkPHP3.2.3完整版 + Layer + PhpStorm + kindeditor + uploadify
 
-### 技能点
-1. 封装Dialog
-2. exit('hell world'); 等同于 echo 'hello world'; exit;
+### 技巧
+1. 封装对话框Dialog.js
+2. 对密码加密最好利用，MD5(密码+盐值)的形式
+
+### PHP知识点
+- exit('hi'); 等同于 echo 'hi'; exit;
+- json_encode,
+
+### TP知识点
+1. 模块m，控制器c，方法a；http://localhost/thinkphp-cms/index.php?m=home&c=index&a=index
+2. [开发规范](http://document.thinkphp.cn/manual_3_2.html#develop_standard)
+3. 一个页面对应一个方法
+4. 应用公共函数写在Application/Common/Common/function.php中
+5. 使用I函数来安全获取变量
+6. 使用C函数来读取配置变量
+7. 使用M方法来实例化数据表
+8. 使用D方法来实例化模型
+9. 使用getLastSql方法来调试SQL语句
+0. [设置admin.php为后台入口文件] (http://document.thinkphp.cn/manual_3_2/bind_index.html)
+
+### 后台工作流
+1. 新建登录控制器 Application/Admin/Controller/LoginController.class.php
+2. 新建登录模板 Application/Admin/View/Login/index.html
+3. 把模板的静态资源（css/js）放到/Public/下，然后在模板中的静态资源路径前加 `__PUBLIC__`
+4. 利用layer封装dialog.js
+5. 封装login.js类来异步提交表单数据
+6. 新建应用公共函数Application/Common/Common/function.php
+7. 编写show_message函数（TP中有内置两个跳转方法success和error可以代替show_message）
 
 ### 课程简介知识点
 
@@ -38,7 +63,7 @@ ThinkPHP3.2.3完整版 + Layer + PhpStorm + kindeditor + uploadify
 
 ### 异步方式实现登录功能
 - 前端校验和获取数据
-- 服务端对数据进行强校验（封装show函数输出json）
+- 服务端对数据进行强校验（封装show函数输出json，关键函数json_encode）
 - 用户信息的数据库校验（单独建一个db.php，LOAD_EXT_CONFIG）
 - 登录成功记录session
 - 退出登录清除session
