@@ -3,7 +3,7 @@ ThinkPHP3.2.3完整版 + Layer + PhpStorm + kindeditor + uploadify
 
 ### 思路&技巧
 1. 封装对话框Dialog.js
-2. 对密码加密最好利用，MD5(密码+盐值)的形式
+2. 对密码加密最好利用MD5(密码+盐值)的形式
 3. 对于后台session判断，抽象出一个公共类
 
 ### PHP知识点
@@ -13,7 +13,7 @@ ThinkPHP3.2.3完整版 + Layer + PhpStorm + kindeditor + uploadify
 ### TP知识点
 1. 模块m，控制器c，方法a；http://localhost/thinkphp-cms/index.php?m=home&c=index&a=index
 2. [开发规范](http://document.thinkphp.cn/manual_3_2.html#develop_standard)
-3. 一个页面对应一个方法
+3. 一个控制器对应一个文件夹；一个页面对应一个方法
 4. 应用公共函数写在Application/Common/Common/function.php中
 5. 使用I函数来安全获取变量
 6. 使用C函数来读取配置变量
@@ -71,12 +71,12 @@ ThinkPHP3.2.3完整版 + Layer + PhpStorm + kindeditor + uploadify
 
 ### 菜单管理
 - 用JS将表单数据转换为json格式
-提交数据（**为什么要序列化数据**）
+- 提交数据（**为什么要序列化数据**）
 - PHP处理数据交互（使用add方法进行数据写入）
 - 菜单列表（列表展示、分页、搜索）
  - volist
  - 判断状态获取文本，写在function.php中
- - 模板中判断实用eq
+ - 模板中判断使用`eq`
 - 删除模块（不实际删除，只改变状态，**为什么要抛出异常**）
 - 排序模块（**序号为什么要用数组类型**）
 - 将配置的数据读取到后台菜单栏中
@@ -88,6 +88,10 @@ ThinkPHP3.2.3完整版 + Layer + PhpStorm + kindeditor + uploadify
 - 标题颜色和来源可以写在配置文件中
 - 入库的数据都要进行过滤 htmlspecialchars 防 xss 攻击
 - 列表分页与搜索
+
+### 网站配置
+- 使用静态缓存来保存数据
+- 使用F方法来实现
 
 ### 其他
 - [jQuery API](http://jquery.cuishifeng.cn/)
