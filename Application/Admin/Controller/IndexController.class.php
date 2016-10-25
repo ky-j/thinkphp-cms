@@ -9,6 +9,7 @@ class IndexController extends Controller {
         // }
         //$this->redirect('http://localhost/thinkphp-cms/admin.php?c=login');
         //print_r(session('adminUser'));
+        $this->webname = C('WEBNAME');
         $this->display();
     }
 
