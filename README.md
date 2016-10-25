@@ -8,6 +8,7 @@ ThinkPHP3.2.3完整版 + Layer + PhpStorm + kindeditor + uploadify
 
 ### PHP知识点
 - exit('hi'); 等同于 echo 'hi'; exit;
+- exit 等同于 die
 - json_encode,
 
 ### TP知识点
